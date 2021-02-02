@@ -1,0 +1,23 @@
+ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 80%;
+  margin: 0 auto;
+}
+
+li {
+  list-style-type: none;
+  display: flex;
+}
+li::after {
+  content: "|";
+}
+
+li:last-child:after {
+  content: "";
+}
+
+.menu {
+  background-color: rgb(243, 95, 95);
+}
